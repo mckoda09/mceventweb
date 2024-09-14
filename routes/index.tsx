@@ -1,21 +1,42 @@
+import { Footer } from "../components/Footer.tsx";
+import { Header } from "../components/Header.tsx";
+
 export default function Home() {
   return (
-    <main class="p-7">
-      {/* <img
-        src="https://crafatar.com/renders/head/ad879cc141714fac8b5c6129828cf232?overlay"
-        alt="mckoda09"
-      /> */}
-      <img src="/cup.png" alt="Logo" width={48} />
-      <div class="text-center p-24 space-y-3">
-        <div class="text-3xl font-exo font-bold">Minecraft Турнир</div>
-        <div>Все новости самого большого Minecraft Турнира в СНГ</div>
+    <main>
+      <Header />
+
+      <div class="py-36 flex items-center justify-center p-7">
+        <div class="space-y-9">
+          <div class="space-y-5 text-center">
+            <div class="flex justify-center">
+              <div class="border rounded-full px-3 py-0.5 text-sm">с 2021</div>
+            </div>
+            <div class="text-4xl md:text-6xl font-semibold font-exo">
+              Minecraft Турнир
+            </div>
+            <div class="text-sm md:text-lg">
+              Новости крупнейшего Minecraft Турнира в СНГ
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-center px-5">
+            <a
+              href="https://discord.gg/minecraft-turnir-911259088837550180"
+              class="flex items-center justify-center px-4 py-2 rounded-lg grow bg-yellow-500 text-white hover:scale-105 active:scale-95 transition-transform cursor-pointer"
+            >
+              Дискорд
+            </a>
+            <a
+              href="/support"
+              class="flex items-center justify-center px-4 py-2 rounded-lg grow border border-yellow-500 text-yellow-500 hover:scale-105 active:scale-95 transition-transform cursor-pointer"
+            >
+              Поддержать
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="absolute right-0 bottom-0 p-3 text-sm text-neutral-500 flex gap-3">
-        <div>webapp by mckoda09</div>
-        <a href="https://github.com/mckoda09/mceventweb">github</a>
-        <a href="/dashboard">dashboard</a>
-      </div>
+      <Footer />
     </main>
   );
 }

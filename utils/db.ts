@@ -1,1 +1,1 @@
-export default kv = await Deno.openKv();
+export const kv = await Deno.openKv();
