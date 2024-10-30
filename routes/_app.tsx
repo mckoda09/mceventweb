@@ -1,7 +1,7 @@
 import { type PageProps } from "$fresh/server.ts";
 export default function App({ Component }: PageProps) {
   return (
-    <html>
+    <html class="bg-neutral-900 text-white">
       <head>
         <meta charset="utf-8" />
         <meta
@@ -10,6 +10,7 @@ export default function App({ Component }: PageProps) {
         />
         <title>Minecraft Турнир</title>
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="icon" href="/cup.png" />
       </head>
       <body>
         <Component />

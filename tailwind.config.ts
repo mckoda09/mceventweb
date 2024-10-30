@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
         exo: ["'Exo 2'", "monospace"],
       },
     },
